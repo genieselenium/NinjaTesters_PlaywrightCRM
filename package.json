@@ -1,0 +1,22 @@
+{
+  "name": "ninjatesters_playwrightcrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "allure-playwright": "^3.10.1",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "multiple-cucumber-html-reporter": "^4.0.0",
+    "winston": "^3.19.0",
+    "xlsx": "^0.18.5"
+  }
+}

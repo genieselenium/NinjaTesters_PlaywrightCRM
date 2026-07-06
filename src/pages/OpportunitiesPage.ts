@@ -1,1 +1,1 @@
-//Page Object Model for Opportunities Page
+//Page Object Model for Opportunities Page.

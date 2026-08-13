@@ -1,0 +1,10 @@
+const accountData = readExcel(
+    './src/testData/AccountsData.xlsx',
+    'AccountsData'
+);
+
+
+accountName	website
+NinjaOne	www.ninjaone.com
+NinjaCRM	www.ninjacrm.com
+TestAccount	www.testaccount.com

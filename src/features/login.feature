@@ -22,9 +22,9 @@ Feature: User Login
     Then System trims spaces and processes login correctly
 
   @positive
-  Scenario: Username with trailing spaces
+  Scenario: Login with username containing trailing spaces
     When User enters username with trailing spaces and valid password
-    Then System trims spaces and processes login correctly
+    Then User should be logged in successfully
 
   @positive
   Scenario: Username is case-insensitive (if supported)
@@ -90,3 +90,11 @@ Feature: User Login
     Given User account is locked
     When User attempts login with correct credentials
     Then User receives account locked message
+
+    @login @excelData
+Scenario: Login using Excel test data
+    Given User is on the Login page
+    When User logs in using excel data
+    
+
+

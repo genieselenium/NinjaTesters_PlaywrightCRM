@@ -1,0 +1,12 @@
+const loginData = readExcel(
+    './src/testData/LoginData.xlsx',
+    'LoginData'
+);
+
+
+username	   password	    expectedResult
+will	       will	        success
+ninja123       will	        failure
+will	       ninja123	    failure
+               will         failure
+will                        failure

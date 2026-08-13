@@ -1,0 +1,58 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2000","10 - Filter list by assigned manager","","2026-07-28","passed","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1072","Login with empty password","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","934","Multiple failed login attempts","","2026-07-28","broken","2026-07-28","","","",""
+"","19132","03 - Create new account easily","","2026-07-28","broken","2026-07-28","","","",""
+"","1545","15 - Stop blocked users from deleting","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","2127","Login with invalid password","","2026-07-28","broken","2026-07-28","","","",""
+"","1691","09 - Filter list by account type","","2026-07-28","passed","2026-07-28","","","",""
+"","1266","12 - Go to the next page of rows","","2026-07-28","passed","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1201","Login using copied and pasted credentials","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","932","Password is case-sensitive","","2026-07-28","broken","2026-07-28","","","",""
+"","4802","14 - Upload a document file","","2026-07-28","passed","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","953","Account locked after threshold failures","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1050","Login with empty username","","2026-07-28","broken","2026-07-28","","","",""
+"","3629","13 - Add a contact to an account","","2026-07-28","passed","2026-07-28","","","",""
+"","27973","05 - Delete an account forever","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1813","Login with invalid username","","2026-07-28","broken","2026-07-28","","","",""
+"","2305","11 - Download accounts to Excel file","","2026-07-28","passed","2026-07-28","","","",""
+"","2350","08 - Search an account by name","","2026-07-28","broken","2026-07-28","","","",""
+"","13191","02 - See account details page","","2026-07-28","broken","2026-07-28","","","",""
+"","1915","06 - Block save if name is missing","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1450","Press Enter key to login","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1273","Login with both fields empty","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1156","Username is case-insensitive (if supported)","","2026-07-28","broken","2026-07-28","","","",""
+"","1506","07 - Test typing very long text","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1390","Username with trailing spaces","","2026-07-28","broken","2026-07-28","","","",""
+"","22002","04 - Change an account name","","2026-07-28","broken","2026-07-28","","","",""
+"","14126","01 - See the Accounts list view","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1026","Successful login with valid credentials","","2026-07-28","broken","2026-07-28","","","",""
+"As a registered user
+  I want to log into the application
+  So that I can securely access the application dashboard","1081","Username with leading spaces","","2026-07-28","broken","2026-07-28","","","",""

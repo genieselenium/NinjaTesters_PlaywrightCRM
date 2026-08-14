@@ -34,20 +34,19 @@ pipeline {
 
         stage('Generate Allure Report') {
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS'){
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [
-                        [path: 'allure-results']
-                    ]
-                ])
-                currentBuild.result = 'SUCCESS'
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [
+                            [path: 'allure-results']
+                        ]
+                    ])
+                }
             }
         }
-    }
     }
 
     post {

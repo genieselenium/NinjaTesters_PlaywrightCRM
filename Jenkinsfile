@@ -22,7 +22,7 @@ pipeline {
 
         stage('Install Playwright Browsers') {
             steps {
-                bat 'npx playwright install --with-deps'
+                bat 'npx playwright install'
             }
         }
 

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "login": "cucumber-js src/features/login.feature --import src/stepDefinitions/**/*.js",
-    "accounts": "cucumber-js src/features/Accounts.feature --import src/stepDefinitions/**/*.js",
+    "login": "cucumber-js --tags \"@login\"",
+    "accounts": "cucumber-js --tags \"@accounts\"",
     "headed": "cross-env HEADLESS=false cucumber-js",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",

@@ -28,7 +28,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'npm run accounts'
+                bat 'npm test'
             }
         }
 

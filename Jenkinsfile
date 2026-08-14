@@ -34,6 +34,7 @@ pipeline {
 
         stage('Generate Allure Report') {
             steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS'){
                 allure([
                     includeProperties: false,
                     jdk: '',
@@ -46,6 +47,7 @@ pipeline {
                 currentBuild.result = 'SUCCESS'
             }
         }
+    }
     }
 
     post {

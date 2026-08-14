@@ -48,22 +48,23 @@ pipeline {
     }
 
     post {
-    always {
-        echo 'Test execution completed.'
-        script {
-            echo "Build result before post actions: ${currentBuild.result}"
+        always {
+            echo 'Test execution completed.'
+            script {
+                echo "Build result before post actions: ${currentBuild.result}"
+            }
         }
-    }
 
-    success {
-        echo 'All tests passed!'
-    }
+        success {
+            echo 'All tests passed!'
+        }
 
-    unstable {
-        echo 'Build marked UNSTABLE — check the Jenkins console output.'
-    }
+        unstable {
+            echo 'Build marked UNSTABLE — check the Jenkins console output.'
+        }
 
-    failure {
-        echo 'Some tests failed.'
+        failure {
+            echo 'Some tests failed.'
+        }
     }
 }

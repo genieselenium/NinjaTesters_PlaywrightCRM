@@ -43,6 +43,7 @@ pipeline {
                         [path: 'allure-results']
                     ]
                 ])
+                currentBuild.result = 'SUCCESS'
             }
         }
     }

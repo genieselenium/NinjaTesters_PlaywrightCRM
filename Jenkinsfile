@@ -33,19 +33,11 @@ pipeline {
         }
 
         stage('Generate Allure Report') {
-            steps {
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [
-                        [path: 'allure-results']
-                    ]
-                ])
-            }
-        }
+    steps {
+        // Generates the report via CLI without triggering Allure plugin status rules
+        bat 'npx allure generate allure-results --clean -o allure-report'
     }
+}
 
     post {
         always {

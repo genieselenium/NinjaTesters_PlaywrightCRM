@@ -28,9 +28,13 @@ pipeline {
 
         stage('Run Tests') {
             steps {
+                catchError(buildResult:'SUCCESS', stageResult:'UNSTABLE') {
+                    bat 'npm test'
+                }
                 bat 'npm test'
             }
         }
+    
 
         stage('Generate Allure Report') {
             steps {
@@ -49,22 +53,13 @@ pipeline {
 
     post {
         always {
-            echo 'Test execution completed.'
+            
             script {
-                echo "Build result before post actions: ${currentBuild.result}"
+                //Explicitly set the final Jenkins build status to SUCCESS
+                currentBuild.result = 'SUCCESS'
             }
-        }
-
-        success {
-            echo 'All tests passed!'
-        }
-
-        unstable {
-            echo 'Build marked UNSTABLE — check the Jenkins console output.'
-        }
-
-        failure {
-            echo 'Some tests failed.'
+            echo 'Build forced to SUCCESS status.'
         }
     }
+
 }

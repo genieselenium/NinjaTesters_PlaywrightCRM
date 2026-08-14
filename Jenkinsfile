@@ -16,7 +16,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm ci--no-audit'
+                bat 'npm ci --no-audit'
             }
         }
 
@@ -37,6 +37,8 @@ pipeline {
                 allure([
                     includeProperties: false,
                     jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
                     results: [
                         [path: 'allure-results']
                     ]
